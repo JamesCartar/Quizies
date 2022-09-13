@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizies</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./js/index.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Welcom to <span>Quizies</span></h1>
+        <p>Are <span>you ready</span> to test your knowledge <span>for fun</span></p>
+    </header>
+    <main id="form-group">
+        <form class="container">
+            <div class="categories-group">
+                <label for="categories">Choose Any Categories you like</label>
+                <select id="categories" class="categories-container">
+                    <option value="" selected disabled>Categories</option>
+                    <!-- <option class="categories">Arts</option>
+                    <option class="categories">Literature</option>
+                    <option class="categories">Arts and Literature</option>
+                    <option class="categories">Movies</option>
+                    <option class="categories">Film</option>
+                    <option class="categories">Film and Tv</option>
+                    <option class="categories">Food and Drink</option>
+                    <option class="categories">Food</option>
+                    <option class="categories">Drink</option>
+                    <option class="categories">General Knowledge</option> -->
+                </select>
+            </div>
+            
+            <div class="radio-group">
+                <div class="difficulty-group">
+                    <input type="radio" name="difficulty" id="easy" value="easy" />
+                    <label for="easy">Easy</label>
+                </div>
+                <div class="difficulty-group">
+                    <input type="radio" name="difficulty" id="medium" value="medium" />
+                    <label for="medium">Medium</label>
+                </div>
+                <div class="difficulty-group">
+                    <input type="radio" name="difficulty" id="hard" value="hard" />
+                    <label for="hard">Hard</label>
+                </div>
+            </div>
+            <button class="btn submit-btn" type="submit">Let's do this !</button>
+        </form>
+    </main>
+</body>
+</html>

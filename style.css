@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "font ballon";
+    src: url('./fonts/Mf\ Air\ Balloon.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1.125rem;
+    color: #f4d58d;
+    margin: 0;
+    background-color: #708d81;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 1.5em;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #001427;
+    border: 10px solid #708d81;
+}
+
+
+
+/* ==============
+    Typography
+   ============== */
+
+h1 {
+    font-size: 1.8rem;
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+
+h1 span,
+h1 + p span {
+    color: #001427;
+    font-weight: 900;
+}
+
+h1 + p {
+    font-size: 1rem;
+    margin-top: .5em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+header {
+    padding: 0 .5em;
+    text-align: center;
+}
+
+label {
+    font-size: 1rem;
+}
+
+
+/* ==============
+    Layout
+   ============== */
+.categories-container {
+    font-size: 1rem;
+    color: currentColor;
+    width: 100%;
+    margin-top: .8em;
+    padding: .8em;
+    background-color: #001427;
+    border: 2px solid #f4d58d;
+}
+
+.categories-container:focus {
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 1rem;
+    color: #f4d58d;
+    padding: .7em;
+    background-color: #001427;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    /* color: #fff; */
+    background-color: #708d81;
+    border: 2px solid #708d81;
+}
+
+/* ===============
+    media quaries
+   =============== */
+@media (min-width: 760px) {
+    header h1 {
+        font-size: 3.5rem;
+        margin-top: 1em;
+    }
+
+    h1 + p {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .categories-container {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    
+}
+
