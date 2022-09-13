@@ -17,6 +17,7 @@ async function fetchQuiz(UserChoosenData) {
 if(window.location.href.includes('index')) {
   let choosenData = {};
   document.getElementById('form').addEventListener('submit', (e) => chooseCategoryAndDifficulty(e, choosenData))
+  console.log(categoryData);
   document.getElementById('categories').innerHTML += categoryData.map(category => {
     return `<option value='${category.toLowerCase().split(' ').join('_')}'>${category}</option>`
   })
@@ -51,18 +52,6 @@ if(window.location.href.includes('index')) {
         renderQuizToDOM();
       }
     }
-
-
-
-
-
-
-
-
-
-
-
-
   } else {
     window.location.href='index.html'
   }
