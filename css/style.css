@@ -15,6 +15,7 @@ body {
     background-color: #708d81;
 }
 
+
 .container {
     max-width: 500px;
     margin: 0 auto;
@@ -29,6 +30,17 @@ body {
     border: 10px solid #708d81;
 }
 
+.qna-container {
+    padding: 2em .3em;
+}
+
+
+.qna-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* ==============
@@ -37,8 +49,20 @@ body {
 
 h1 {
     font-size: 1.8rem;
-    margin-top: 3em;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #708d81;
+    text-align: center;
+    margin: 0;
+    padding: 0 .5em;
+    background-color: #001427;
+}
+
+header h1 {
     margin-bottom: 0;
+    margin-top: 1.5em;
 }
 
 h1 span,
@@ -50,7 +74,7 @@ h1 + p span {
 h1 + p {
     font-size: 1rem;
     margin-top: .5em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: capitalize;
 }
 
@@ -61,6 +85,32 @@ header {
 
 label {
     font-size: 1rem;
+}
+
+.warning {
+    font-size: .75rem;
+    color: red;
+    display: block;
+    padding-top: 1em;
+}
+
+.question {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .2em;
+}
+
+.answer-group {
+    margin: 1em 0;
+}
+
+.answer-group input[type=radio] {
+    float: left;
+}
+
+.answer-group label {
+    margin-left: 25px;
+    display: block;
 }
 
 
@@ -99,37 +149,48 @@ label {
 
 .btn:hover,
 .btn:focus {
-    /* color: #fff; */
     background-color: #708d81;
     border: 2px solid #708d81;
+}
+
+.next-question-btn {
+    width: 100%;
 }
 
 /* ===============
     media quaries
    =============== */
 @media (min-width: 760px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .container.qna-container {
+        padding: 1em;
+    }
+
     header h1 {
         font-size: 3.5rem;
         margin-top: 1em;
     }
 
+    h1 + p,
+    h3,
+    label,
+    .question
+    {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
     h1 + p {
-        font-size: 1.3rem;
-        letter-spacing: 2px;
+        word-spacing: 3px;
+        text-align: center;
     }
 
-    .container {
-        max-width: 700px;
+    .question {
+        padding-left: .5em;
     }
-
-    .categories-container {
-        font-size: 1.2rem;
-    }
-
-    label {
-        font-size: 1.2rem;
-    }
-
     
 }
 

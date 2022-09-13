@@ -11,48 +11,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/index.js" type="module"></script>
 </head>
 <body>
     <header>
-        <h1 class="title">Welcom to <span>Quizies</span></h1>
-        <p>Are <span>you ready</span> to test your knowledge <span>for fun</span></p>
+        <h1 class="title"><span>Welcom to</span> Quizies</h1>
+        <p>Are you ready <span>to test your knowledge</span> for fun</p>
     </header>
     <main id="form-group">
-        <form class="container">
+        <form class="container" id="form">
             <div class="categories-group">
                 <label for="categories">Choose Any Categories you like</label>
                 <select id="categories" class="categories-container">
-                    <option value="" selected disabled>Categories</option>
-                    <!-- <option class="categories">Arts</option>
-                    <option class="categories">Literature</option>
-                    <option class="categories">Arts and Literature</option>
-                    <option class="categories">Movies</option>
-                    <option class="categories">Film</option>
-                    <option class="categories">Film and Tv</option>
-                    <option class="categories">Food and Drink</option>
-                    <option class="categories">Food</option>
-                    <option class="categories">Drink</option>
-                    <option class="categories">General Knowledge</option> -->
+                    <option selected disabled>Categories</option>
                 </select>
+                <span id="warning" class="warning"></span>
             </div>
             
             <div class="radio-group">
                 <div class="difficulty-group">
-                    <input type="radio" name="difficulty" id="easy" value="easy" />
+                    <input type="radio" name="difficulty" id="easy" value="easy" class="radio" />
                     <label for="easy">Easy</label>
                 </div>
                 <div class="difficulty-group">
-                    <input type="radio" name="difficulty" id="medium" value="medium" />
+                    <input type="radio" name="difficulty" id="medium" value="medium" class="radio" aria-selected="true" checked/>
                     <label for="medium">Medium</label>
                 </div>
                 <div class="difficulty-group">
-                    <input type="radio" name="difficulty" id="hard" value="hard" />
+                    <input type="radio" name="difficulty" id="hard" value="hard" class="radio" />
                     <label for="hard">Hard</label>
                 </div>
             </div>
-            <button class="btn submit-btn" type="submit">Let's do this !</button>
+            <button class="btn start-btn" id="start-btn" type="submit">Let's do this !</button>
         </form>
     </main>
 </body>
