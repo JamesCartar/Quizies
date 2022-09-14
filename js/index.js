@@ -11,9 +11,6 @@ async function fetchQuiz(UserChoosenData) {
 }
 
 
-
-
-
 if(window.location.href.includes('index')) {
   let choosenData = {};
   document.getElementById('form').addEventListener('submit', (e) => chooseCategoryAndDifficulty(e, choosenData))
@@ -53,7 +50,7 @@ if(window.location.href.includes('index')) {
       }
     }
   } else {
-    window.location.href='index.html'
+    // window.location.href='index.html'
   }
 }
   
